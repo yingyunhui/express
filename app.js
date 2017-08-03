@@ -3,8 +3,8 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-var index = require('./routers/index');
-var api = require('./routers/api');
+var index = require('./routes/index');
+var api = require('./routes/api');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
